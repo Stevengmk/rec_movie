@@ -1,0 +1,6 @@
+Windows shell 常用命令：
+cd + filename   切换文件夹
+cd /d + path   切换目录
+盘符 e:  切换到e盘
+copy nul filename   创建空文件
+mkdir 创建文件夹
