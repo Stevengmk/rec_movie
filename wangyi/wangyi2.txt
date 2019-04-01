@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int time = in.nextInt();
+		int wake_time = in.nextInt();
+		int []like = new int[time];
+		int []awake = new int[time];
+		
+		if(wake_time>time) {
+			return;
+		}
+		
+		for(int i=0;i<time;i++) {
+			like[i] = in.nextInt();
+		}
+		
+		int acquire=0;
+		boolean used = false;
+		
+		for(int j=0;j<time;j++) {
+			awake[j] = in.nextInt();
+			if(awake[j]==1) {
+				acquire+=like[j];
+			}else {
+				used = true;
+			}
+		}
+		
+		if(!used||wake_time==0) {
+			System.out.println(acquire);
+		}else {
+			int max=Integer.MIN_VALUE;
+			
+			for(int k=0;k<time-2;k++) {
+				if(awake[k]==0) {
+					int sum=like[k];
+					for(int q=1;q<wake_time;q++) {
+						if(k+q>time-1) {
+							break;
+						}else {
+							if(awake[k+q]==0) {
+								sum+=like[k+q];
+							}
+						}
+						
+					}
+					if(sum>max) {
+					 	max = sum;
+					}
+				}
+			}
+			System.out.println(acquire+max);
+		}
+		
+		
+		
+	}
+}
