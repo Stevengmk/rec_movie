@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
 
 <head>
 
@@ -22,6 +22,15 @@
   <!-- Custom CSS -->
   <link href="/static/bootstrap/css/stylish-portfolio.min.css" rel="stylesheet">
 
+    <style TYPE="text/css">
+        <!--
+        A:link {text-decoration:none;color:whitesmoke}
+        A:visited {text-decoration:none;color:whitesmoke}
+        A:hover {text-decoration:none;color:black}
+        A:active {text-decoration:none;color:whitesmoke}
+        -->
+    </style>
+
 
 </head>
 
@@ -34,23 +43,23 @@
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="js-scroll-trigger" href="#page-top">Start From Top</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#page-top">Home</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
+        <a class="js-scroll-trigger" href="#about">About Douban</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
+        <a class="js-scroll-trigger" href="#services">Movie Rec</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <a class="js-scroll-trigger" href="#portfolio">Movie Rank</a>
       </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
+{#      <li class="sidebar-nav-item">#}
+{#        <a class="js-scroll-trigger" href="#contact">Contact us</a>#}
+{#      </li>#}
     </ul>
   </nav>
 
@@ -73,7 +82,7 @@
         <div class="col-lg-10 mx-auto">
           <h2>Start Your Movie Journey!</h2>
           <p class="lead mb-5">Visit
-            <a href="https://movie.douban.com/">Douban Movie</a>!</p>
+              <span style="color: #1d2124"><a href="https://movie.douban.com/" >Douban Movie</a>!</span></p>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
         </div>
       </div>
@@ -85,60 +94,99 @@
     <div class="container">
       <div class="content-section-heading">
 {#          <h3 class="text-secondary mb-0">Rank</h3>#}
-        <h2 class="mb-5">Here is the Movie Board</h2>
+        <h2 class="mb-5">Here is the Movie Rec </h2>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-{#          <span class="service-icon rounded-circle mx-auto mb-3">#}
-{#            <i class="icon-screen-smartphone"></i>#}
-{#              #}
-{#          </span>#}
+
+{#                <span class="service-icon rounded-circle mx-auto mb-3">#}
+{#                    <i class="icon-screen-smartphone"></i>#}
+{#                    <a id="text_1" href=""></a>#}
+{#                </span>#}
             <div>
                 <a href="" id="rec_1">
                     <img id="img_1" src=""/>
                 </a>
-                <span id="text_1" href=""></span>
+
+                <div>
+                    <a id="text_1" href="" ></a>
+                </div>
+
             </div>
 {#          <h4>#}
 {#            <strong>Echarts</strong>#}
 {#          </h4>#}
+{#          <p class="text-faded mb-0"></p>#}
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+{#          <span class="service-icon rounded-circle mx-auto mb-3">#}
+{#            <i class="icon-pencil"></i>#}
+{#          </span>#}
+{#          <h4>#}
+{#            <strong>Redesigned</strong>#}
+{#          </h4>#}
+{#          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>#}
+            <div>
+                <a href="" id="rec_2">
+                    <img id="img_2" src=""/>
+                </a>
 
-          <p class="text-faded mb-0"></p>
+                <div>
+                    <a id="text_2" href="" ></a>
+                </div>
+
+            </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" id="rec_2">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-          <h4>
-            <strong>Redesigned</strong>
-          </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+{#          <span class="service-icon rounded-circle mx-auto mb-3">#}
+{#            <i class="icon-like"></i>#}
+{#          </span>#}
+{#          <h4>#}
+{#            <strong>Favorited</strong>#}
+{#          </h4>#}
+{#          <p class="text-faded mb-0">Millions of users#}
+{#            <i class="fas fa-heart"></i>#}
+{#            Start Bootstrap!</p>#}
+            <div>
+                <a href="" id="rec_3">
+                    <img id="img_3" src=""/>
+                </a>
+
+                <div>
+                    <a id="text_3" href="" ></a>
+                </div>
+
+            </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0" id="rec_3">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-          <h4>
-            <strong>Favorited</strong>
-          </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
-        </div>
-        <div class="col-lg-3 col-md-6" id="rec_4">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
-          </span>
-          <h4>
-            <strong>Question</strong>
-          </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
+        <div class="col-lg-3 col-md-6  mb-5 mb-md-0">
+{#          <span class="service-icon rounded-circle mx-auto mb-3">#}
+{#            <i class="icon-mustache"></i>#}
+{#          </span>#}
+{#          <h4>#}
+{#            <strong>Question</strong>#}
+{#          </h4>#}
+{#          <p class="text-faded mb-0">I mustache you a question...</p>#}
+            <div>
+                <a href="" id="rec_4">
+                    <img id="img_4" src=""/>
+                </a>
+
+                <div>
+                    <a id="text_4" href="" ></a>
+                </div>
+
+            </div>
         </div>
       </div>
     </div>
       <div style="margin: 20px">
 {#      <div>#}
-      <button type="button" id="target_test" class="btn btn-dark btn-xl js-scroll-trigger">Rank</button>
+          <form id="my_form" method="get">
+{#              {% csrf_token %}#}
+              <input type="text" name="rec_user" id="rec_text"/>
+              <input type="button" id="target_test" class="btn btn-dark btn-xl js-scroll-trigger" value="Rec"/>
+          </form>
+
       </div>
   </section>
 
@@ -146,9 +194,10 @@
   <section class="callout">
     <div class="container text-center">
       <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
+        <em>our</em>
+        Movie Board!</h2>
+{#        href="https://startbootstrap.com/template-overviews/stylish-portfolio/"#}
+      <button type="button" class="btn btn-primary btn-xl" id="rank_test">Rank</button>
     </div>
   </section>
 
@@ -156,27 +205,30 @@
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+        <h3 class="text-secondary mb-0">Movie Rank Barplot</h3>
+        <h2 class="mb-5">科幻 喜剧 爱情 动作</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+{#                <h2>Stationary</h2>#}
+                  <div id="charts_1" style="width:480px;height:300px;"></div>
+                <p class="mb-0">科幻电影排行榜</p>
               </span>
             </span>
             <img class="img-fluid" src="/static/bootstrap/img/portfolio-1.jpg" alt="">
           </a>
+
         </div>
         <div class="col-lg-6">
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+{#                <h2>Ice Cream</h2>#}
+                  <div id="charts_2" style="width:480px;height:300px;"></div>
+                <p class="mb-0">喜剧电影排行榜</p>
               </span>
             </span>
             <img class="img-fluid" src="/static/bootstrap/img/portfolio-2.jpg" alt="">
@@ -186,8 +238,9 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+{#                <h2>Strawberries</h2>#}
+                  <div id="charts_3" style="width:480px;height:300px;"></div>
+                <p class="mb-0">爱情电影排行榜</p>
               </span>
             </span>
             <img class="img-fluid" src="/static/bootstrap/img/portfolio-3.jpg" alt="">
@@ -197,8 +250,9 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Workspace</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+{#                <h2>Workspace</h2>#}
+                  <div id="charts_4" style="width:480px;height:300px;"></div>
+                <p class="mb-0">动作电影排行榜</p>
               </span>
             </span>
             <img class="img-fluid" src="/static/bootstrap/img/portfolio-4.jpg" alt="">
@@ -210,22 +264,24 @@
 
   <!-- Call to Action -->
   <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+    <div class="container text-center" id="main-gmk" style="width:480px;height:300px;">
+      <h2 class="mb-4">Return to the top</h2>
       <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
       <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
     </div>
   </section>
 
   <!-- Map -->
-  <section id="contact" class="map">
+<!--  <section id="contact" class="map">
     <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+{#      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.cn/maps/place/%E4%B8%9C%E5%8C%97%E5%A4%A7%E5%AD%A6%E6%B5%91%E5%8D%97%E6%A0%A1%E5%8C%BA/@41.6550621,123.4189565,18z/data=!4m12!1m6!3m5!1s0x5e2f7880422e1e87:0x2432e782e9e8a7f!2z5Lic5YyX5aSn5a2m5rWR5Y2X5qCh5Yy6!8m2!3d41.654996!4d123.41967!3m4!1s0x5e2f7880422e1e87:0x2432e782e9e8a7f!8m2!3d41.654996!4d123.41967"></iframe>#}
     <br />
     <small>
       <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+{#        <a href="https://www.google.cn/maps/place/%E4%B8%9C%E5%8C%97%E5%A4%A7%E5%AD%A6%E6%B5%91%E5%8D%97%E6%A0%A1%E5%8C%BA/@41.6550621,123.4189565,18z/data=!4m12!1m6!3m5!1s0x5e2f7880422e1e87:0x2432e782e9e8a7f!2z5Lic5YyX5aSn5a2m5rWR5Y2X5qCh5Yy6!8m2!3d41.654996!4d123.41967!3m4!1s0x5e2f7880422e1e87:0x2432e782e9e8a7f!8m2!3d41.654996!4d123.41967"></a>#}
     </small>
   </section>
-
+-->
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">

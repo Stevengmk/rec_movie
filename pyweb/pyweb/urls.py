@@ -18,6 +18,8 @@ from django.urls import path
 from appWeb import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index),
-    path('test/',views.do_filter),
+    path('', views.index),
+    path('test/', views.do_filter),
+    path('top/', views.do_type_top)
+
 ]

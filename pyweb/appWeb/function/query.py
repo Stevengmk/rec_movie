@@ -114,10 +114,11 @@ class CF:
                 if i[0] == item[1]:
                     movie = i
                     break
-            for i in self.ItemUser[item[1]]:
-                if i in neighbors_id:
-                    fromID.append(i)
-            movie.append(fromID)
+            # for i in self.ItemUser[item[1]]:
+            #     if i in neighbors_id:
+            #         fromID.append(i)
+            # movie.append(fromID)
             line.append(movie)
-        result = pd.DataFrame(line, columns=['movieURL', 'Name', 'img_url', 'type', 'from userID'])
+        # result = pd.DataFrame(line, columns=['movieURL', 'Name', 'img_url', 'type', 'from userID'])
+        result = pd.DataFrame(line, columns=['movieURL', 'Name', 'img_url', 'type'])
         return result
